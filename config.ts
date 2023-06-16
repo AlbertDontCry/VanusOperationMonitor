@@ -12,12 +12,12 @@ dotenv.config();
 
 interface ENV {
 	PORT?: number;
-	DB_CONNECTION: string;
+	DB_CONNECTION?: string;
 }
 
 interface Config {
 	PORT: number;
-	DB_CONNECTION: string;
+	DB_CONNECTION?: string;
 }
 
 // Loading process.env as ENV interface
@@ -25,7 +25,7 @@ interface Config {
 const getConfig = (): ENV => {
 	return {
 		PORT: process.env.PORT ? Number(process.env.PORT) : 3005,
-		DB_CONNECTION: process.env.DB_CONNECTION
+		DB_CONNECTION: process.env.DB_CONNECTION,
 	};
 };
 
