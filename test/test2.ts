@@ -1,5 +1,5 @@
 import { Request } from "express";
-import connection  from "./models/vanus_ai_connection";
+import connection  from "../models/vanus_ai_connection";
 import mongoose from "mongoose";
 
 const test2 = async (req: Request) => {

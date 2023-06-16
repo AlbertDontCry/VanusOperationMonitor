@@ -1,5 +1,5 @@
 import { Request } from "express";
-import active_user  from "./models/vanus_ai_active_users";
+import active_user  from "../models/vanus_ai_active_users";
 
 const test = async (req: Request) => {
   try {
