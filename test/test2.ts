@@ -16,6 +16,7 @@ const test2 = async (req: Request) => {
     });
 
     await testDoc.save();
+    console.log(testDoc);
     const response = "Data is successfully saved";
     return response;
   } catch (error) {

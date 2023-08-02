@@ -41,19 +41,19 @@ app.listen(port, '127.0.0.1', () => {
 });
 
 
-// import {Request, Response} from "express";
-// import { test2 } from "./test2"
+import {Request, Response} from "express";
+import { test2 } from "./test/test2"
 // import { test } from "./test"
 
 // test connection model
-// app.post('/connection', async (req:Request, res:Response) => {
-//   try {
-//     const connection = test2(req);
-//     res.send(connection);
-//   } catch (error) {
-//     res.status(500).send(error);
-//   }
-// });
+app.post('/connection', async (req:Request, res:Response) => {
+  try {
+    const connection = test2(req);
+    res.send(connection);
+  } catch (error) {
+    res.status(500).send(error);
+  }
+});
 
 // test active_user model
 // app.post('/user', async (req:Request, res:Response) => {
